@@ -1,0 +1,21 @@
+MARIO DANS MA PIECE — QUEST 3
+
+1. Activez le mode développeur du Quest dans Meta Horizon.
+2. Branchez le casque au PC en USB et autorisez le débogage USB.
+3. Installez MarioRoom-Quest3.apk avec SideQuest (installation APK),
+   ou avec : adb install -r MarioRoom-Quest3.apk
+4. Lancez « Mario dans ma pièce » dans Sources inconnues.
+5. Autorisez les données de la pièce ; utilisez le scan enregistré
+   ou l’option « Scanner la pièce ».
+
+Joystick gauche : déplacer Mario. A : sauter.
+Poignée gauche : courir. Gâchette droite : placer sur la surface visée.
+B : rappeler Mario. X/Menu gauche : ouvrir les réglages.
+Menu : joystick pour choisir, gauche/droite pour la taille, A valider.
+
+Prototype : vrai modèle et poses de Mario 64, physique Godot.
+APK ARM64 signé, pas de ROM complète ni de connexion Internet.
+Les tests sur ordinateur passent ; le fonctionnement matériel du Quest
+(passthrough, manettes, scan) reste à vérifier sur votre casque.
+Sans scan, seul un sol provisoire existe : pas de collisions meubles.
+Pas encore d’occlusion visuelle derrière les meubles réels.
