@@ -1,0 +1,57 @@
+MARIO DANS MA PIECE — QUEST 3 — VERSION 0.3.0
+
+MISE A JOUR
+Installez MarioRoom-Quest3.apk avec SideQuest, ou :
+  adb install -r MarioRoom-Quest3.apk
+Même application et signature que les versions précédentes : pas besoin
+ de désinstaller. Lancez-la ensuite dans Sources inconnues.
+
+CREER UN NIVEAU
+- Choisissez Ascension, Serpentin ou Expédition.
+- Réglez Difficulté (1 à 5) et Taille de Mario (15 à 85 cm).
+- Cochez Monde créatif pour les téléportations et les pouvoirs libres.
+- Choisissez Générer un nouveau niveau et attendez la validation des sauts.
+Le joystick vertical choisit les lignes ; gauche/droite règle les curseurs ;
+A valide. Si la pièce est trop encombrée ou Mario trop grand, réduisez sa taille.
+Le parcours s’adapte à la taille et aux surfaces connues. Un Mario plus petit
+permet généralement un parcours plus long dans la même pièce.
+
+MODE PARCOURS
+Récupérez l’étoile. A partir de difficulté 2, récoltez d’abord les pièces rouges
+pour la débloquer. Les bonus bleus en hauteur valent 5 pièces. Evitez les dangers
+rouges et les ennemis ; sautez sur les ennemis ou attaquez avec B.
+Une chute, un rappel ou la gâchette droite ramène EXCLUSIVEMENT au départ.
+Aux difficultés 4 et 5, cela réinitialise les pièces et les ennemis.
+La taille du parcours reste verrouillée jusqu’à la prochaine génération.
+
+MODE CREATIF
+Téléportez Mario librement avec le rayon et la gâchette droite.
+Dans Réglages MR / pouvoirs : casquette normale, ailée, métal, invisibilité.
+L’option Envol lance le vol original avec la casquette ailée.
+Les pouvoirs sont renouvelés automatiquement. Une étoile de sortie reste
+présente dans un coin du parcours, sans objectif de pièces rouges.
+
+DANS LES DEUX MODES
+Prendre l’étoile renvoie au menu de génération avec le résultat.
+X / Menu gauche ouvre aussi le menu à tout moment.
+Une nouvelle taille/difficulté ne prend effet qu’au prochain niveau.
+
+COMMANDES
+Joystick gauche : déplacement analogique et course.
+A : saut. B : attaque. Poignée gauche : Z (accroupi / attaque au sol).
+Z puis A en courant : saut en longueur original.
+Gâchette droite : départ en parcours, placement libre en créatif.
+X / Menu gauche : menu. Dans les menus : joystick + A, B pour retour.
+
+REALITE MIXTE
+Mode officiel Meta sans limite conservé. Pas de scan forcé au lancement.
+Autorisez les données de la pièce pour les collisions et la profondeur.
+Sans scan, la génération utilise un sol provisoire et ignore les meubles réels.
+Un scan ancien ne suit pas les meubles déplacés ; la profondeur sert à
+l’occlusion visuelle, pas à la collision physique d’une jambe.
+
+VALIDATION
+84 contrôles du générateur et des modes de jeu, tests des collisions et
+comparaison native de 150 ticks passés dans le cloud. APK ARM64 signé et
+alignement vérifié. Le placement dans votre pièce, les commandes Quest et
+l’occlusion restent à essayer sur votre casque avec Horizon OS à jour.
