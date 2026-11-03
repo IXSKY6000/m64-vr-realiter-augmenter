@@ -1,0 +1,39 @@
+MARIO DANS MA PIECE — QUEST 3 — VERSION 0.2.0
+
+MISE A JOUR
+Installez MarioRoom-Quest3.apk avec SideQuest, ou :
+  adb install -r MarioRoom-Quest3.apk
+La signature est la même que la v0.1.0 : inutile de désinstaller.
+Ouvrez ensuite « Mario dans ma pièce » dans Sources inconnues.
+
+CHANGEMENTS
+- Mode officiel Meta MR sans limite (BOUNDARYLESS_APP).
+- Plus de lancement automatique du scan / configuration d’espace.
+- Moteur Mario 64 natif : déplacements, sauts, actions et animations à 30 Hz.
+- Occlusion temps réel via la profondeur du Quest, mains conservées.
+
+COMMANDES
+Joystick gauche : déplacement analogique et course.
+A : saut (l’appui maintenu est transmis au jeu).
+B : attaque originale. Poignée gauche : Z (accroupi / attaque au sol).
+Z puis A en courant : saut en longueur original.
+Gâchette droite : placer Mario sur la surface visée.
+X / Menu gauche : réglages, taille, scanner, rappeler Mario.
+Dans le menu : joystick choisir/régler, A valider, B fermer.
+
+AUTORISATION ET CONTROLES
+Autorisez l’accès aux données de la pièce pour le scan et la profondeur.
+« Occlusion temps réel » est activée par défaut ; la ligne de statut indique
+si la profondeur est réellement active, indisponible ou non prise en charge.
+Sans scan, seul un sol provisoire est utilisé pour les collisions.
+Le système du casque reste maître des écrans de configuration qu’il affiche.
+Utilisez un Quest 3 avec Horizon OS à jour.
+
+VALIDATION
+APK ARM64 signé, alignement et contenu vérifiés. Tests du moteur/collisions
+et comparaison de 150 ticks contre les appels C directs de libsm64 passés.
+L’occlusion réelle et le mode sans limite restent à vérifier sur le casque.
+
+NON INCLUS
+Pas de collision physique avec une jambe réelle : occlusion et collision
+ne sont pas équivalentes. Pas de générateur de niveau, Goomba ou étoile.
